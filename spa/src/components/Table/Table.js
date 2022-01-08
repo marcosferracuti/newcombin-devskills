@@ -3,7 +3,6 @@ import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import { getMembers } from '../../api/api';
 import { set } from '../../redux/membersSlice';
-import { useEffect } from 'react';
 
 
 export const Table = () => {
