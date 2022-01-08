@@ -6,14 +6,13 @@ import { set } from '../../redux/membersSlice';
 
 
 export const Table = () => {
-    const members = useSelector(state => state.members.members);
+    const members = useSelector(state => state.members);
     const dispatch = useDispatch()
     const updateMemers = async () => {
         const res =  await getMembers()
         if (res.success) {
             dispatch(set(res.data))
         }
-        console.log(res)
     }
 
     useEffect(() => {

@@ -24,7 +24,6 @@ function App() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    console.log('--->', isLoggedIn)
     if (!isLoggedIn) {
       navigate("/login")
     }

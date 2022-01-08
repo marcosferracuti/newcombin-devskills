@@ -19,10 +19,6 @@ export const LoginForm = () => {
     const [data, setData] = useState(initialState)
     const dispatch = useDispatch();
 
-    const validate = () => {
-        console.log('validating...')
-    }
-
     const handleChange = (e) => {
         const field = e.target.name;
         const value = e.target.value;
@@ -33,9 +29,8 @@ export const LoginForm = () => {
                 valid: false
             }
         })
-        validate()
     }
-
+    
     const onReset = (e) => {
         e.preventDefault();
     }

@@ -2,15 +2,13 @@ import { createSlice } from '@reduxjs/toolkit'
 
 export const membersSlice = createSlice({
   name: 'members',
-  initialState: {
-    members: [],
-  },
+  initialState: [],
   reducers: {
     add: (state, action) => {
-      state.members.push(action.payload);
+      state.push(action.payload);
     },
     set: (state, action) => {
-      state.members = action.payload;
+      return action.payload;
     }
   },
 })

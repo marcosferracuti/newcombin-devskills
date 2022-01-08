@@ -58,3 +58,12 @@
     transform: scale(.95);
     transition-duration: .2s;
 }
+
+.button:disabled {
+    color: rgb(212, 212, 207);
+    border-color: currentColor;
+}
+
+.error {
+    border-color:rgb(245, 177, 76);
+}
