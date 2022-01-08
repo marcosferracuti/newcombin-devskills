@@ -5,7 +5,8 @@
     box-sizing: border-box;
     width: 100%;
     padding: 0 5rem;
-    background-color: rgb(150, 150, 241);
+    background-color: #383838;
+    color: white;
 }
 
 .item {
